@@ -17,6 +17,10 @@ Installing
 
 - Create an alias from your id_rsa to config/id_rsa: <code>ln -s ~/.ssh/<your_project>.pem app/config/id_rsa</code>
 
+Deploying
+---
+
+After follow the installing instructions you may be able to execute: <code>cap deploy</code>
 
 Server Needs
 ---
