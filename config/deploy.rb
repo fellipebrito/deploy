@@ -1,7 +1,7 @@
 # config valid only for Capistrano 3.1
 lock '3.1.0'
 
-set :application, 'bingapi'
+set :application, '__YOUR_APP__'
 set :log_level, :debug
 
 set :repo_url, "__YOUR_GIT_REPO__"
