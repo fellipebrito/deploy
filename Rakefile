@@ -7,6 +7,7 @@ task :install do
   create_sym_link '../../config/deploy.rb', '../vendor/deploy/config/deploy.rb'
   create_sym_link '../../config/deploy/lambda.rb', '../../vendor/deploy/deploy/lambda.rb'
   create_sym_link '../../config/deploy/production.rb', '../../vendor/deploy/deploy/production.rb'
+  create_sym_link '../../lib/capistrano/tasks/git.cap', '../../vendor/deploy/lib/capistrano/tasks/git.cap'
 end
 
 def create_sym_link source, target
