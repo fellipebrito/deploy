@@ -9,13 +9,13 @@ server {
   # server_name your_app.com;
 
   # replace this with your static Sinatra app files, root + public
-  # root /var/www/current/public;
+  root /var/www/current/public;
 
   # port to listen for requests on
-  listen 80; 
+  listen 80;
 
   # maximum accepted body size of client request
-  client_max_body_size 4G; 
+  client_max_body_size 4G;
 
   # the server will close connections after this time
   keepalive_timeout 5;
@@ -24,7 +24,7 @@ server {
   access_log /var/www/shared/log/nginx.access.log combined;
   error_log  /var/www/shared/log/nginx.error.log;
 
-  location / { 
+  location / {
     try_files $uri @app;
   }
 
