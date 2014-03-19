@@ -22,6 +22,8 @@ Deploying
 
 After follow the installing instructions you may be able to execute: <code>cap deploy</code>
 
+After the first deploy you should create an alias for nginx config: <code>ln -s app/vendor/deploy/config/sites_available.default to /etc/nginx/sites-available/default</code>
+
 Server Needs
 ---
 
