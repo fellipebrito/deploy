@@ -8,10 +8,11 @@ task :install do
   create_sym_link '../../config/deploy/lambda.rb', '../../vendor/deploy/deploy/lambda.rb'
   create_sym_link '../../config/deploy/production.rb', '../../vendor/deploy/deploy/production.rb'
   create_sym_link '../../lib/capistrano/tasks/git.cap', '../../../vendor/deploy/lib/capistrano/tasks/git.cap'
+  create_sym_link '/etc/nginx/sites-available/default', '/var/www/current/vendor/deploy/config/sites_available.default'
 end
 
 def create_sym_link source, target
-  system %Q{ln -s #{target} #{source} --force}
+  system %Q{sudo ln -s #{target} #{source} --force}
 end
 
 def create_dir path
