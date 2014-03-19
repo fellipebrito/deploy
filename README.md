@@ -7,7 +7,7 @@ Installing
 ---
 
 - **Add it as a submodule** in vendor/deploy: 
-<code>git submodule add git://YOUR-REPO vendor/deploy</code>
+<code>git submodule add https://github.com/fellipebrito/deploy.git vendor/deploy</code>
 
 
 - Inside vendor/deploy **run rake install** so you create the correct aliases: <code>cd vendor/deploy && rake install</code>
