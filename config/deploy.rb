@@ -1,13 +1,13 @@
 # config valid only for Capistrano 3.1
 lock '3.1.0'
 
-set :application, '__YOUR_APP__'
+set :application, '[[APP_NAME]]'
 set :log_level, :info #debug
 #set :rvm_ruby_version, '2.0.0-p451'
 
-set :repo_url, "__YOUR_GIT_REPO__"
+set :repo_url, "[[GIT_REPOSITORY]]"
 set :branch,   proc { `git rev-parse --abbrev-ref HEAD`.chomp }
-set :deploy_to, "/var/www"
+set :deploy_to, "/var/www/[[APP_NAME]]"
 
 # Aliases
 #set :linked_files, %w{config/database.yml vendor/database/config/settings.yml}

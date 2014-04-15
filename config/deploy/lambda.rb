@@ -1,4 +1,4 @@
-server __YOUR_DEV_SERVER__, user: __YOUR_DEV_SERVER_USER__, roles: %w{web app}
+server '[[LAMBDA_SERVER]]', user: '[[LAMBDA_USER]]', roles: %w{web app}
 
 # set custom ssh options
 set :ssh_options, {
