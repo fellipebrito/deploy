@@ -1,4 +1,4 @@
-deploy_to   = '/var/www/[[APP_NAME]]'
+deploy_to   = '/var/www/rumblefish/[[APP_NAME]]'
 rack_root   = "#{deploy_to}/current"
 pid_file    = "#{deploy_to}/shared/tmp/pids/unicorn.pid"
 socket_file = "#{deploy_to}/shared/tmp/sockets/unicorn.sock"

@@ -7,7 +7,7 @@ set :log_level, :info #debug
 
 set :repo_url, '[[GIT_REPOSITORY]]'
 set :branch,   proc { `git rev-parse --abbrev-ref HEAD`.chomp }
-set :deploy_to, '/var/www/[[APP_NAME]]'
+set :deploy_to, '/var/www/rumblefish/[[APP_NAME]]'
 
 # Aliases
 set :linked_files, %w{ config/settings.yml }
