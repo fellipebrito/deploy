@@ -150,7 +150,7 @@ end
 
 # DEfine files to copy to project with replacements
 def files
-  %w{ Capfile config/deploy.rb config/deploy/production.rb lib/capistrano/tasks/git.cap }
+  %w{ Capfile config/deploy.rb config/deploy/production.rb lib/capistrano/tasks/git.cap config/unicorn.rb }
 end
 
 def lambda_files
